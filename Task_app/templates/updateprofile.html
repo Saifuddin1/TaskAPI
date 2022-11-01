@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% block title %}Sign Up{% endblock %}
+{% block contant %}
+    <div class="row">
+        <div class="col-md-4 col-sm-4 col-xs-12 "></div>
+        <div class="col-md-4 col-sm-4 col-xs-12 bgColor mt-5 border rounded">
+          <h3 class="textColor text-center mt-5">Update Profile</h3>
+          <hr class="bgColor2" />
+          <form class="textColor" method="POST">
+            <div class="row mb-3">
+              <div class="col-md-12 bgColor">
+                <label class="form-label">User Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name = "username"
+                  aria-describedby="lastNamelHelp"
+                  value={{user.username}}
+                />
+              </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-12 bgColor">
+                  <label class="form-label">Email</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name = "email"
+                    aria-describedby="lastNamelHelp"
+                    value={{user.email}} 
+                    disabled
+                  />
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-12 bgColor">
+                  <label class="form-label">Contact</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    aria-describedby="lastNamelHelp"
+                    placeholder="last name"
+                    name = "contact"
+                    value={{user.contact}}
+                  />
+                </div>
+              </div>
+              <div class="row mb-2 mt-4">
+                <div class="col-md-6" >
+                    <a class="btn btn-primary" href="/" role="button">Main Page</a>
+                </div>
+                <div class="col-md-6" align = "right">
+                    <button class="btn btn-primary" type = "submit">Update</button>
+                  </div>
+              </div>
+              
+          </form>
+          <hr class="bgColor2 mb-6" />
+          
+          
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12 "></div>
+      </div>
+      </div> 
+{% endblock %}

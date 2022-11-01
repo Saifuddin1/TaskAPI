@@ -1,0 +1,60 @@
+
+
+
+{% extends "base.html" %}
+{% block title %}Create Task{% endblock %}
+{% block contant %}
+
+
+<div class="row">
+  <div class="col-md-4 col-sm-4 col-xs-12 "></div>
+  <div class="col-md-4 col-sm-4 col-xs-12 bgColor mt-5 border rounded">
+    <h3 class="textColor text-center mt-5">Create Task</h3>
+    <hr class="bgColor2" />
+    <form class="textColor" method="POST">
+      <div class="row mb-3">
+        <div class="col-md-12 col-sm-12 col-xs-12 bgColor">
+          <label class="form-label">Empact</label>
+          <input
+            type="number"
+            class="form-control"
+            aria-describedby="empactHelp"
+            placeholder="Enter Empact"
+            name = "empact"
+          />
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-md-12 col-sm-12 col-xs-12 bgColor">
+          <label class="form-label">Ease</label>
+          <input
+            type="number"
+            class="form-control"
+            aria-describedby="easeHelp"
+            placeholder="Enter Ease"
+            name = "ease"
+          />
+        </div>
+      </div>
+      <div class="row mb-3">
+          <div class="col-md-12 col-sm-12 col-xs-12 bgColor">
+            <label for = "confidence">Confidence</label>
+              <input 
+                type = "number" 
+                id ="confidence" 
+                name = "confidence" 
+                class = "form-control" 
+                placeholder=" Enter Confidence "
+              />
+          </div>
+      </div>
+      <hr class="mt-4">
+      <div align = "center ">
+          <button class="btn btn-primary mt-4 mb-3" type = "submit">Create Task</button>
+        </div>
+    </form>
+  </div>
+  <div class="col-md-4 col-sm-4 col-xs-12 "></div>
+</div>
+</div> 
+{% endblock %}

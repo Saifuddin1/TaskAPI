@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% block title %}Login{% endblock %}
+{% block contant %}
+
+
+<div class="row">
+  <div class="col-md-4 col-sm-4 col-xs-12 "></div>
+  <div class="col-md-4 col-sm-4 col-xs-12 bgColor mt-5 border rounded">
+    <h3 class="textColor text-center mt-5">Login</h3>
+    <hr class="bgColor2" />
+    <form class="textColor" method="POST">
+      <div class="row mb-3">
+        <div class="col-md-12 col-sm-12 col-xs-12 bgColor">
+          <label class="form-label">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            aria-describedby="emailHelp"
+            placeholder="Enter email"
+            name = "email"
+          />
+        </div>
+      </div>
+      <div class="row mb-3">
+          <div class="col-md-12 col-sm-12 col-xs-12 bgColor">
+            <label for = "email">Password</label>
+              <input 
+                type = "password" 
+                id ="password" 
+                name = "password" 
+                class = "form-control" 
+                placeholder=" Enter Password "
+              />
+          </div>
+      </div>
+      <hr class="mt-4">
+      <div align = "center ">
+          <button class="btn btn-primary mt-4 mb-3" type = "submit">Login</button>
+        </div>
+    </form>
+  </div>
+  <div class="col-md-4 col-sm-4 col-xs-12 "></div>
+</div>
+</div> 
+
+
+
+<!-- 
+<form method = "POST">
+    <h3 align = "center">Login</h3>
+    <div class = "form-group">
+        <label for = "email">Email Address</label>
+        <input 
+            type = "text" 
+            id ="email" 
+            name = "email" 
+            class = "form-control" 
+            placeholder=" Enter Email "
+        />
+        <label for = "email">Password</label>
+        <input 
+            type = "password" 
+            id ="password" 
+            name = "password" 
+            class = "form-control" 
+            placeholder=" Enter Password "
+    />
+    <br />
+    <div align = "center">
+      <button class="btn btn-primary" type = "submit">Login</button>
+    </div>
+  </div>
+</form> -->
+{% endblock %}

@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% block title %}User Profile{% endblock %}
+{% block contant %}
+<div class="row">
+  <div class="col-md-4 col-sm-4 col-xs-12 "></div>
+  <div class="col-md-4 col-sm-4 col-xs-12 bgColor mt-5 border rounded">
+    <h3 class="textColor text-center mt-5">User Profile</h3>
+    <hr class="bgColor2" />
+    <form class="textColor">
+      <div class="row mb-3">
+        <div class="col-md-12 col-sm-12 col-xs-12 bgColor">
+          <label class="form-label">User Name</label>
+            <input
+              type="text"
+              class="form-control"
+              aria-describedby="lastNamelHelp"
+              placeholder="last name"
+              value={{user.username}}
+            />
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-md-12 col-sm-12 col-xs-12 bgColor">
+          <label class="form-label">Contact</label>
+          <input
+            type="email"
+            class="form-control"
+            aria-describedby="emailHelp"
+            placeholder="username"
+            value="{{user.contact}}"
+          />
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-md-12 col-sm-12 col-xs-12 bgColor">
+          <label class="form-label">Email</label>
+          <input
+            type="text"
+            class="form-control"
+            aria-describedby="contactHelp"
+            placeholder="contact"
+            value={{user.email}}
+          />
+        </div>
+      </div>  
+    </form>
+    <hr class="bgColor2 mb-6" />
+    <div class="row mb-2">
+      <div class="col-md-6">
+          <a class="btn btn-primary" href="/" role="button">Main Page</a>
+      </div>
+      <div class="col-md-6" align="right">
+          <a class="btn btn-primary" href="/update-profile" role="button">Update Profile</a>
+      </div>
+    </div>
+    
+  </div>
+  <div class="col-md-4 col-sm-4 col-xs-12 "></div>
+</div>
+</div> 
+
+{% endblock %}
+
+
